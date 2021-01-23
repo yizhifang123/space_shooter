@@ -1,0 +1,117 @@
+STRINGS:
+.lower() makes all lowercase
+.upper()makes all uppercase
+
+.replace("your word or letter", "your new word or letter") replaces the first word with the second word
+
+.find("your word") finds the index of the word
+
+"your word" in your variable|||| tells if there is the word in that variable
+
+OPERATIONS:
++ = addition operation
+- = subtraction operation
+* = multiplication operator
+/ = decimal division operator
+// = whole number division operator
+% = remainder for division
+** = exponent operation
+
+NOTE:
+PEMDAS applies in python
+
+COMPARISON OPERATIONS:
+< = less than
+> = greater than
+== | equal comparison
+!= | not equal comparison
+
+LOGICAL OPERATIONS:
+and = print(1>0 and 2>1) if the operations are all true it will print true else it will print false
+or = print(1>1 or 2>1) if at least one operation is correct it will print true
+not = print(not 10>11) for this it will print true if print(not 2>1) it will print false
+
+LIST METHODS:
+numbers = [1]
+your variable that represents a list.append(what you want to add to your list)
+your variable that represents a list.remove(what you want to remove from the list)
+your variable that represents a list.clear() clears your list
+print(len(your variable that represents a list)) prints how much words/numbers are in your list
+
+TUPLES:
+numbers = (1)
+your variable that represents a list.count(what you want to count in your list = x) prints how much times they see x in your list.
+your variable that represents a list.index(what you want to index = x) prints the index of the first occurance of x.
+
+NOTE:
+Tuples can not be changed
+
+ARRAY:
+your variable = {your list}
+print(your array variable[the word/numbers index]) this prints the number that has the index you put
+the array variable.pop(the index)    this deletes the number/word the is represented by the index
+the array variable[the index] = "the new word/number"
+the array variable.remove("what you want to remove")    removes the word/number that you put in the parentheses
+the array variable.sort()   sorts your list in alphabetical order
+the array variable.sort(reverse = true)  changes the list in alphabetical order then reverses your list
+your variable.append("what you want to add")
+your variable.clear()   clears you array
+your variable.copy()      copies the array
+your variable.count("what you want to count")  prints how much occurrences of the word.number you entered
+your variable.extend(what you want to extend)   adds the things you inserted in the parentheses to the variable
+your variable.index(what you want to index)    tells you the index of the number/word you put in the parenthesis
+your variable.insert(the index, "what you want to add")   adds the thing you put in quotations to the index you put
+
+Method	Description
+append()	Adds an element at the end of the list
+clear()	Removes all the elements from the list
+copy()	Returns a copy of the list
+count()	Returns the number of elements with the specified value
+extend()	Add the elements of a list (or any iterable), to the end of the current list
+index()	Returns the index of the first element with the specified value
+insert()	Adds an element at the specified position
+pop()	Removes the element at the specified position
+remove()	Removes the first item with the specified value
+reverse()	Reverses the order of the list
+sort()	Sorts the list
+
+
+
+NUMPY ARRAYS
+from numpy import *
+
+lazy = array([
+    [1, 2, 3, 4, 11, 12],
+    [5, 6, 7, 8, 9, 10]
+
+])
+
+# OPERATIONS
+print(lazy.ndim)
+print(lazy.shape)
+print(lazy.size)
+print(diagonal(lazy))
+print(lazy.min)
+print(lazy.max)
+
+# RESHAPE TO 1D
+flatter = lazy.flatten()
+print(flatter)
+
+# RESHAPE TO 3D
+ducks = flatter.reshape(2, 2, 3)
+print(ducks)
+
+# RESHAPE TO 2D
+place = matrix(lazy)
+
+# PYGAME
+start with this loop:
+import pygame
+gameDisplay = pygame.display.set_mode((display_width, display_height))
+crashed = False
+while not crashed:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            crashed = True
+
